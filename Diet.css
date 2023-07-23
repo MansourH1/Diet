@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100%;
+}
+
+blockquote{
+    color: white;
+    font-size: 40px;
+}
+
+theme{
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #FFFF;
+    font-family: cursive;
+    font-size: 20px;
+}
+div{
+    color: #FFFF;
+}
+.top-navbar{
+    display: inline;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar-button:hover{
+    color: red;
+    filter: drop-shadow(white 2px 5px 10px);
+}
+.navbar-button{
+    color: white;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+ font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .responsive-background {
+        background-image: url('GymPhoto.jpg');
+        /* You can also adjust other properties for smaller screens if needed */
+    }
+}
+
+.StartJourney{
+    margin-left: 3%;
+    background-color: red;
+    width: 10%;
+    height: 10%;
+    color: white;
+    font-size: 15px;
+    font-family: Georgia !important;
+}
+
+.StartJourney:hover{
+    cursor: pointer;
+}
+
+::root{
+
+}
