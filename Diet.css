@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-image: url('GymPhoto.jpg');background-size: cover;max-width: 100%;background-repeat: no-repeat
 }
 
 header{
@@ -19,20 +20,25 @@ theme{
     font-family: cursive;
     font-size: 20px;
 }
+
 div{
     color: #FFFF;
 }
+
 .top-navbar{
     display: inline;
 }
+
 nav{
     display: flex;
     justify-content: space-evenly;
 }
+
 .navbar-button:hover{
     color: red;
     filter: drop-shadow(white 2px 5px 10px);
 }
+
 .navbar-button{
     color: white;
     border-style: none;
@@ -41,13 +47,12 @@ nav{
  font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .responsive-background {
-        background-image: url('GymPhoto.jpg');
-        /* You can also adjust other properties for smaller screens if needed */
+
+@media (max-width: 550px){
+    body{
+        background-image: url('GymPhotoPhone.jpg');
     }
 }
-
 .StartJourney{
     margin-left: 3%;
     background-color: red;
@@ -55,11 +60,40 @@ nav{
     height: 10%;
     color: white;
     font-size: 15px;
+    box-sizing: border-box; /* Include padding and border in the total width */
+    overflow: hidden; /* Hide any content that exceeds the button's boundaries */
+    white-space: pre-wrap; /*Prevent text from wrapping to the next line*/
     font-family: Georgia !important;
 }
 
 .StartJourney:hover{
     cursor: pointer;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.inform{
+    border-radius: 1em;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    font-size: 20px;
+}
+
+table{
+    margin-top: 25%;
+    cell-spacing:2px;
+}
+
+img{
+    width: 50%;
 }
 
 ::root{
